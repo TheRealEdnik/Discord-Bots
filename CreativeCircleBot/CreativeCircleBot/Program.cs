@@ -41,6 +41,11 @@ namespace CreativeCircleBot
             return Task.CompletedTask;
         }
 
+        [SlashCommand("CommandName", "Descr" new Option()
+        {
+
+        }]
+
         private static async Task CommandHandler(SocketMessage message)
         {
             string command = "";

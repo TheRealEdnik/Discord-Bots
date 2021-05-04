@@ -1,36 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj": {}
+    "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj": {
+    "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
+        "projectUniqueName": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
         "projectName": "CreativeCircleBot",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\obj\\",
+        "projectPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
+        "packagesPath": "C:\\Users\\there\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\there\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "DSharpPlus": {
               "target": "Package",
@@ -75,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

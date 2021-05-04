@@ -1938,11 +1938,12 @@
       ]
     },
     "Discord.Net.Commands/2.3.1": {
-      "sha512": "BO9AL74/rCBebrMxD1AoAP5+F2XU2sPTqClbZ4zIAzO8Q/vOhM1TjZOgpTSPtz4EO0UnysniJDxL2v9J7wKNQg==",
+      "sha512": "m7LXE4d+veYl9sR81Rpy0hwMaYxa2gAeh5shzCXr69VhcAjLVUK4UHf1tAOQtEhySrvqjhld00qtFALPJ0mlgA==",
       "type": "package",
       "path": "discord.net.commands/2.3.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "discord.net.commands.2.3.1.nupkg.sha512",
         "discord.net.commands.nuspec",
         "lib/net461/Discord.Net.Commands.dll",
@@ -1954,11 +1955,12 @@
       ]
     },
     "Discord.Net.Core/2.3.1": {
-      "sha512": "OVsBlswBVeEmBYS64vsp+SsR4F00a9mTdTadtqodEGwGhq0VsYBkvjQWbIm9VSQ38l/kEGkojtv0wbCMqYeiWQ==",
+      "sha512": "/6wOZ8HVunSA1DHWGv3XxBZDxdCpF1zjyfDIKtXoTtP3Ot7d4jcf6RksqRlw1vLVmchBd56GR/UoDG6/0mbeAQ==",
       "type": "package",
       "path": "discord.net.core/2.3.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "discord.net.core.2.3.1.nupkg.sha512",
         "discord.net.core.nuspec",
         "lib/net461/Discord.Net.Core.dll",
@@ -1970,11 +1972,12 @@
       ]
     },
     "Discord.Net.Rest/2.3.1": {
-      "sha512": "PN9DTm0ZksgWyfc0JP/+9B0BNWhnilQGzUG72jEc4kne/pCCmiJ6lCqI1Rc7Khr1vFjP3vCn0R/4eqZoIGDBTA==",
+      "sha512": "t1aczyRbLpvKGQGOnFskcCteg0CwxefSuUJAuVkRZyHPDTRvk60IdJYh6cyYtKcGwJuCynNIIKrlSVNwDcY9Qw==",
       "type": "package",
       "path": "discord.net.rest/2.3.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "discord.net.rest.2.3.1.nupkg.sha512",
         "discord.net.rest.nuspec",
         "lib/net461/Discord.Net.Rest.dll",
@@ -1986,11 +1989,12 @@
       ]
     },
     "Discord.Net.Webhook/2.3.1": {
-      "sha512": "mC4V9axlI8XP1U1fUsm8j0tcXOBTprHhrzok6D8rHISVd4wrxMUj9RDcbRW+mimC2N8l+/gGPSSxP6GvBgNKEw==",
+      "sha512": "I/sPU3Ag1XdognQmdc+FmhwSdyv7YsMVhaamJ0h0QzlhwgX+8542esKxhuDSwVTloWkbO4sFlEOYZjyJVoDWjg==",
       "type": "package",
       "path": "discord.net.webhook/2.3.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "discord.net.webhook.2.3.1.nupkg.sha512",
         "discord.net.webhook.nuspec",
         "lib/netstandard2.0/Discord.Net.Webhook.dll",
@@ -2000,11 +2004,12 @@
       ]
     },
     "Discord.Net.WebSocket/2.3.1": {
-      "sha512": "/H0D1Kctji0s1Yk0AUBZySd5rqoeYt8hm2tnrfAaZXHzkp/HD5bujGG+sVdDgZ3EczgmsLd/n6WZVGqYt1qvWA==",
+      "sha512": "yBw2gTinqvuSIvI8YxlM05W4Cx/lW5yA8PaUCs3Jqpv+Xm9DqrjgRgvM39aqCI3Cip3Z1kyMgnwvJZBsi/+GBQ==",
       "type": "package",
       "path": "discord.net.websocket/2.3.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "discord.net.websocket.2.3.1.nupkg.sha512",
         "discord.net.websocket.nuspec",
         "lib/net461/Discord.Net.WebSocket.dll",
@@ -6353,36 +6358,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\there\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
+      "projectUniqueName": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
       "projectName": "CreativeCircleBot",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Schulsachen-PC-LAPTOP\\CreativeCircleBot\\CreativeCircleBot\\obj\\",
+      "projectPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
+      "packagesPath": "C:\\Users\\there\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\there\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6394,6 +6394,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "DSharpPlus": {
             "target": "Package",
@@ -6427,7 +6428,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
