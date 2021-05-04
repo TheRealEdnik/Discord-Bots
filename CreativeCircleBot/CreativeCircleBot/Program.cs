@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using Discord.Rest;
+using System.Collections.Generic;
 
 namespace CreativeCircleBot
 {
@@ -18,6 +19,7 @@ namespace CreativeCircleBot
             _client.MessageReceived += CommandHandler;
             _client.UserJoined += OnUserJoin;
             _client.Log += Log;
+            _client.UserJoined += OnMemberJoin;
 
             var token = File.ReadAllText("token.txt");
 
@@ -25,6 +27,11 @@ namespace CreativeCircleBot
             await _client.StartAsync();
 
             await Task.Delay(-1);
+        }
+
+        private static async Task OnMemberJoin(SocketGuildUser arg)
+        {
+
         }
 
         private static Task OnUserJoin(SocketGuildUser arg)
@@ -40,11 +47,6 @@ namespace CreativeCircleBot
             Console.WriteLine(msg.ToString());
             return Task.CompletedTask;
         }
-
-        [SlashCommand("CommandName", "Descr" new Option()
-        {
-
-        }]
 
         private static async Task CommandHandler(SocketMessage message)
         {
@@ -92,6 +94,20 @@ namespace CreativeCircleBot
                     var invite2 = await (_client.GetChannel(839016058454278167) as ITextChannel).CreateInviteAsync(maxAge: null, maxUses: 1, isTemporary: false, isUnique: true, options: RequestOptions.Default);
 
                     await message.Channel.SendMessageAsync($"Here you have your 2 invites. Make sure to use them wisely!\n{invite1.Url}\n{invite2.Url}");
+                    break;
+
+                case "invites":
+                    SocketGuild guild = _client.GetGuild(839016057901023263);
+
+                    await guild.GetInvitesAsync().ContinueWith((invites) =>
+                    {
+                        inviteCounter = { };
+
+                        foreach (var inv in invites)
+                        {
+
+                        }
+                    })
                     break;
 
                 default:

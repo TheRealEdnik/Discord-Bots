@@ -40,21 +40,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "DSharpPlus": {
-              "target": "Package",
-              "version": "[4.0.1, )"
-            },
             "Discord.Net": {
               "target": "Package",
               "version": "[2.3.1, )"
-            },
-            "Remora.Discord": {
-              "target": "Package",
-              "version": "[3.0.28, )"
-            },
-            "Remora.Discord.Commands": {
-              "target": "Package",
-              "version": "[3.10.2, )"
             }
           },
           "imports": [
