@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eEYZklihId2//AvnSR1r3G9ztMuMfa/SZ6l+UrVqiBMU6nYUIivMHapdCFnCM1pGV8RsZrlRGhQFZKsYR8ST+A==",
+  "dgSpecHash": "7dWm8/xeXYXChvSGxoYbeD804bd8GEwkLwS2/Fu6hrDaHQ6rzrlfSKRseqLL+QYRmf+U+OBPizSRvt3tG69obw==",
   "success": true,
   "projectFilePath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBot.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\there\\.nuget\\packages\\discord.net.rest\\2.3.1\\discord.net.rest.2.3.1.nupkg.sha512",
     "C:\\Users\\there\\.nuget\\packages\\discord.net.webhook\\2.3.1\\discord.net.webhook.2.3.1.nupkg.sha512",
     "C:\\Users\\there\\.nuget\\packages\\discord.net.websocket\\2.3.1\\discord.net.websocket.2.3.1.nupkg.sha512",
+    "C:\\Users\\there\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\3.6.0\\microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512",
+    "C:\\Users\\there\\.nuget\\packages\\microsoft.net.compilers\\3.9.0\\microsoft.net.compilers.3.9.0.nupkg.sha512",
     "C:\\Users\\there\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\there\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\there\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
@@ -30,5 +32,16 @@
     "C:\\Users\\there\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\there\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 3.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
