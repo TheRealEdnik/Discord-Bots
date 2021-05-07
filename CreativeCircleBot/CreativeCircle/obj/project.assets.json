@@ -76,22 +76,106 @@
           "lib/netstandard2.1/Discord.Net.WebSocket.dll": {}
         }
       },
-      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/3.6.0": {
+      "Microsoft.Extensions.Configuration/5.0.0": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
         "compile": {
-          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         },
         "runtime": {
-          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
-        },
-        "build": {
-          "build/net46/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         }
       },
-      "Microsoft.Net.Compilers/3.9.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
         "type": "package",
-        "build": {
-          "build/Microsoft.Net.Compilers.props": {}
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -110,6 +194,20 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NetEscapades.Configuration.Yaml/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.0.0",
+          "YamlDotNet": "9.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetEscapades.Configuration.Yaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetEscapades.Configuration.Yaml.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.2": {
@@ -315,6 +413,15 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "YamlDotNet/9.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/YamlDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/YamlDotNet.dll": {}
+        }
       }
     }
   },
@@ -413,269 +520,162 @@
         "lib/netstandard2.1/Discord.Net.WebSocket.xml"
       ]
     },
-    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/3.6.0": {
-      "sha512": "Wxo1vjgqJDawdtSBYegfe7fqUfdKn5vMtAMgHHxjV5rW9rSyQZMQ5t0YTCxyQ/IUyAOoUkrHMVXNLCdqAtH72w==",
+    "Microsoft.Extensions.Configuration/5.0.0": {
+      "sha512": "LN322qEKHjuVEhhXueTUe7RNePooZmS8aGid5aK2woX3NPjSnONFyKUc6+JknOS6ce6h2tCLfKPTBXE3mN/6Ag==",
       "type": "package",
-      "path": "microsoft.codedom.providers.dotnetcompilerplatform/3.6.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.targets",
-        "build/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets",
-        "build/net46/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.targets",
-        "build/net46/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets",
-        "build/net472/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.targets",
-        "build/net472/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets",
-        "content/net45/app.config.install.xdt",
-        "content/net45/app.config.uninstall.xdt",
-        "content/net45/web.config.install.xdt",
-        "content/net45/web.config.uninstall.xdt",
-        "content/net46/app.config.install.xdt",
-        "content/net46/app.config.uninstall.xdt",
-        "content/net46/web.config.install.xdt",
-        "content/net46/web.config.uninstall.xdt",
-        "content/net472/app.config.install.xdt",
-        "content/net472/app.config.uninstall.xdt",
-        "content/net472/web.config.install.xdt",
-        "content/net472/web.config.uninstall.xdt",
-        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
-        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml",
-        "microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512",
-        "microsoft.codedom.providers.dotnetcompilerplatform.nuspec",
-        "tasks/DotNetCompilerPlatformTasks.dll",
-        "tasks/System.Management.dll",
-        "tools/Roslyn45/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Roslyn45/Microsoft.CSharp.Core.targets",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.dll",
-        "tools/Roslyn45/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Roslyn45/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Roslyn45/Microsoft.VisualBasic.Core.targets",
-        "tools/Roslyn45/System.AppContext.dll",
-        "tools/Roslyn45/System.Collections.Immutable.dll",
-        "tools/Roslyn45/System.Diagnostics.StackTrace.dll",
-        "tools/Roslyn45/System.IO.FileSystem.Primitives.dll",
-        "tools/Roslyn45/System.IO.FileSystem.dll",
-        "tools/Roslyn45/System.Reflection.Metadata.dll",
-        "tools/Roslyn45/VBCSCompiler.exe",
-        "tools/Roslyn45/VBCSCompiler.exe.config",
-        "tools/Roslyn45/csc.exe",
-        "tools/Roslyn45/csc.exe.config",
-        "tools/Roslyn45/csc.rsp",
-        "tools/Roslyn45/csi.exe",
-        "tools/Roslyn45/csi.rsp",
-        "tools/Roslyn45/vbc.exe",
-        "tools/Roslyn45/vbc.exe.config",
-        "tools/Roslyn45/vbc.rsp",
-        "tools/Roslyn46/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Roslyn46/Microsoft.CSharp.Core.targets",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.dll",
-        "tools/Roslyn46/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Roslyn46/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Roslyn46/Microsoft.Managed.Core.targets",
-        "tools/Roslyn46/Microsoft.VisualBasic.Core.targets",
-        "tools/Roslyn46/Microsoft.Win32.Primitives.dll",
-        "tools/Roslyn46/System.AppContext.dll",
-        "tools/Roslyn46/System.Collections.Immutable.dll",
-        "tools/Roslyn46/System.Console.dll",
-        "tools/Roslyn46/System.Diagnostics.DiagnosticSource.dll",
-        "tools/Roslyn46/System.Diagnostics.FileVersionInfo.dll",
-        "tools/Roslyn46/System.Diagnostics.StackTrace.dll",
-        "tools/Roslyn46/System.Globalization.Calendars.dll",
-        "tools/Roslyn46/System.IO.Compression.ZipFile.dll",
-        "tools/Roslyn46/System.IO.Compression.dll",
-        "tools/Roslyn46/System.IO.FileSystem.Primitives.dll",
-        "tools/Roslyn46/System.IO.FileSystem.dll",
-        "tools/Roslyn46/System.Net.Http.dll",
-        "tools/Roslyn46/System.Net.Sockets.dll",
-        "tools/Roslyn46/System.Reflection.Metadata.dll",
-        "tools/Roslyn46/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "tools/Roslyn46/System.Security.Cryptography.Algorithms.dll",
-        "tools/Roslyn46/System.Security.Cryptography.Encoding.dll",
-        "tools/Roslyn46/System.Security.Cryptography.Primitives.dll",
-        "tools/Roslyn46/System.Security.Cryptography.X509Certificates.dll",
-        "tools/Roslyn46/System.Text.Encoding.CodePages.dll",
-        "tools/Roslyn46/System.Threading.Tasks.Extensions.dll",
-        "tools/Roslyn46/System.ValueTuple.dll",
-        "tools/Roslyn46/System.Xml.ReaderWriter.dll",
-        "tools/Roslyn46/System.Xml.XPath.XDocument.dll",
-        "tools/Roslyn46/System.Xml.XPath.dll",
-        "tools/Roslyn46/System.Xml.XmlDocument.dll",
-        "tools/Roslyn46/VBCSCompiler.exe",
-        "tools/Roslyn46/VBCSCompiler.exe.config",
-        "tools/Roslyn46/csc.exe",
-        "tools/Roslyn46/csc.exe.config",
-        "tools/Roslyn46/csc.rsp",
-        "tools/Roslyn46/csi.exe",
-        "tools/Roslyn46/csi.exe.config",
-        "tools/Roslyn46/csi.rsp",
-        "tools/Roslyn46/vbc.exe",
-        "tools/Roslyn46/vbc.exe.config",
-        "tools/Roslyn46/vbc.rsp",
-        "tools/Roslyn472/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Roslyn472/Microsoft.CSharp.Core.targets",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.dll",
-        "tools/Roslyn472/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Roslyn472/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Roslyn472/Microsoft.Managed.Core.targets",
-        "tools/Roslyn472/Microsoft.VisualBasic.Core.targets",
-        "tools/Roslyn472/System.Buffers.dll",
-        "tools/Roslyn472/System.Collections.Immutable.dll",
-        "tools/Roslyn472/System.Memory.dll",
-        "tools/Roslyn472/System.Numerics.Vectors.dll",
-        "tools/Roslyn472/System.Reflection.Metadata.dll",
-        "tools/Roslyn472/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/Roslyn472/System.Text.Encoding.CodePages.dll",
-        "tools/Roslyn472/System.Threading.Tasks.Extensions.dll",
-        "tools/Roslyn472/VBCSCompiler.exe",
-        "tools/Roslyn472/VBCSCompiler.exe.config",
-        "tools/Roslyn472/csc.exe",
-        "tools/Roslyn472/csc.exe.config",
-        "tools/Roslyn472/csc.rsp",
-        "tools/Roslyn472/csi.exe",
-        "tools/Roslyn472/csi.exe.config",
-        "tools/Roslyn472/csi.rsp",
-        "tools/Roslyn472/vbc.exe",
-        "tools/Roslyn472/vbc.exe.config",
-        "tools/Roslyn472/vbc.rsp",
-        "tools/net45/common.ps1",
-        "tools/net45/install.ps1",
-        "tools/net45/uninstall.ps1"
-      ]
-    },
-    "Microsoft.Net.Compilers/3.9.0": {
-      "sha512": "uopLz2cQvxaiKVHhsxalzzwtbixJAILpdfxggv3wka0KuRgX+/DwffkfqG4+yYPsKVKltNHVyr0hR9UhCoblog==",
-      "type": "package",
-      "path": "microsoft.net.compilers/3.9.0",
-      "hasTools": true,
+      "path": "microsoft.extensions.configuration/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "ThirdPartyNotices.rtf",
-        "build/Microsoft.Net.Compilers.props",
-        "microsoft.net.compilers.3.9.0.nupkg.sha512",
-        "microsoft.net.compilers.nuspec",
-        "tools/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Microsoft.CSharp.Core.targets",
-        "tools/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Microsoft.CodeAnalysis.dll",
-        "tools/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Microsoft.Managed.Core.targets",
-        "tools/Microsoft.VisualBasic.Core.targets",
-        "tools/System.Buffers.dll",
-        "tools/System.Collections.Immutable.dll",
-        "tools/System.Memory.dll",
-        "tools/System.Numerics.Vectors.dll",
-        "tools/System.Reflection.Metadata.dll",
-        "tools/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/System.Text.Encoding.CodePages.dll",
-        "tools/System.Threading.Tasks.Extensions.dll",
-        "tools/VBCSCompiler.exe",
-        "tools/VBCSCompiler.exe.config",
-        "tools/cs/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/cs/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/cs/Microsoft.CodeAnalysis.resources.dll",
-        "tools/csc.exe",
-        "tools/csc.exe.config",
-        "tools/csc.rsp",
-        "tools/csi.exe",
-        "tools/csi.exe.config",
-        "tools/csi.rsp",
-        "tools/de/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/de/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/de/Microsoft.CodeAnalysis.resources.dll",
-        "tools/es/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/es/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/es/Microsoft.CodeAnalysis.resources.dll",
-        "tools/fr/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/fr/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/fr/Microsoft.CodeAnalysis.resources.dll",
-        "tools/it/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/it/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/it/Microsoft.CodeAnalysis.resources.dll",
-        "tools/ja/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/ja/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/ja/Microsoft.CodeAnalysis.resources.dll",
-        "tools/ko/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/ko/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/ko/Microsoft.CodeAnalysis.resources.dll",
-        "tools/pl/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/pl/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/pl/Microsoft.CodeAnalysis.resources.dll",
-        "tools/pt-BR/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/pt-BR/Microsoft.CodeAnalysis.resources.dll",
-        "tools/ru/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/ru/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/ru/Microsoft.CodeAnalysis.resources.dll",
-        "tools/tr/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/tr/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/tr/Microsoft.CodeAnalysis.resources.dll",
-        "tools/vbc.exe",
-        "tools/vbc.exe.config",
-        "tools/vbc.rsp",
-        "tools/zh-Hans/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
-        "tools/zh-Hant/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
-        "tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
-        "tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "tools/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll",
-        "tools/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "tools/zh-Hant/Microsoft.CodeAnalysis.resources.dll"
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/2.0.0": {
+      "sha512": "ebFbu+vsz4rzeAICWavk9a0FutWVs7aNZap5k/IVxVhu2CnnhOp/H/gNtpzplrqjYDaNYdmv9a/DoUvH2ynVEQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "sha512": "//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
+      "sha512": "Z0AK+hmLO33WAXQ5P1uPzhH7z5yjDHX/XnUefXxE//SyvCb9x4cVjND24dT5566t/yzGp8/WLD7EG9KQKZZklQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/2.0.0": {
+      "sha512": "DKO2j2socZbHNCCVEWsLVpB3AQIIzKYFNyITVeWdA1jQ829GJIQf4MUD04+1c+Q2kbK03pIKQZmEy4CGIfgDZw==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.2.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/2.0.0": {
+      "sha512": "UC87vRDUB7/vSaNY/FVhbdAyRkfFBTkYmcUoglxk6TyTojhSqYaG5pZsoP4e1ZuXktFXJXJBTvK8U/QwCo0z3g==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.2.0.0.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -706,6 +706,23 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "NetEscapades.Configuration.Yaml/2.1.0": {
+      "sha512": "kNTX7kvRvbzBpLd3Vg9iu6t60tTyhVxsruAPgH6kl1GkAZIHLZw9cQysvjUenDU7JEnUgyxQnzfL8627ARDn+g==",
+      "type": "package",
+      "path": "netescapades.configuration.yaml/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/NetEscapades.Configuration.Yaml.dll",
+        "lib/net461/NetEscapades.Configuration.Yaml.pdb",
+        "lib/net472/NetEscapades.Configuration.Yaml.dll",
+        "lib/net472/NetEscapades.Configuration.Yaml.pdb",
+        "lib/netstandard2.0/NetEscapades.Configuration.Yaml.dll",
+        "lib/netstandard2.0/NetEscapades.Configuration.Yaml.pdb",
+        "netescapades.configuration.yaml.2.1.0.nupkg.sha512",
+        "netescapades.configuration.yaml.nuspec"
       ]
     },
     "Newtonsoft.Json/12.0.2": {
@@ -1732,6 +1749,30 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "YamlDotNet/9.1.0": {
+      "sha512": "fuvGXU4Ec5HrsmEc+BiFTNPCRf1cGBI2kh/3RzMWgddM2M4ALhbSPoI3X3mhXZUD1qqQd9oSkFAtWjpz8z9eRg==",
+      "type": "package",
+      "path": "yamldotnet/9.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net20/YamlDotNet.dll",
+        "lib/net20/YamlDotNet.xml",
+        "lib/net35-client/YamlDotNet.dll",
+        "lib/net35-client/YamlDotNet.xml",
+        "lib/net35/YamlDotNet.dll",
+        "lib/net35/YamlDotNet.xml",
+        "lib/net45/YamlDotNet.dll",
+        "lib/net45/YamlDotNet.xml",
+        "lib/netstandard1.3/YamlDotNet.dll",
+        "lib/netstandard1.3/YamlDotNet.xml",
+        "lib/netstandard2.1/YamlDotNet.dll",
+        "lib/netstandard2.1/YamlDotNet.xml",
+        "yamldotnet.9.1.0.nupkg.sha512",
+        "yamldotnet.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1742,8 +1783,9 @@
       "Discord.Net.Rest >= 2.3.1",
       "Discord.Net.WebSocket >= 2.3.1",
       "Discord.Net.Webhook >= 2.3.1",
-      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform >= 3.6.0",
-      "Microsoft.Net.Compilers >= 3.9.0"
+      "Microsoft.Extensions.Configuration >= 5.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 5.0.1",
+      "NetEscapades.Configuration.Yaml >= 2.1.0"
     ]
   },
   "packageFolders": {
@@ -1752,11 +1794,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBotOld.csproj",
-      "projectName": "CreativeCircleBotOld",
-      "projectPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\CreativeCircleBotOld.csproj",
+      "projectUniqueName": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircle\\CreativeCircle.csproj",
+      "projectName": "CreativeCircle",
+      "projectPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircle\\CreativeCircle.csproj",
       "packagesPath": "C:\\Users\\there\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircleBot\\obj\\",
+      "outputPath": "D:\\Users\\there\\Documents\\Discord-Bots\\CreativeCircleBot\\CreativeCircle\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\there\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1809,15 +1851,17 @@
             "target": "Package",
             "version": "[2.3.1, )"
           },
-          "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
+          "Microsoft.Extensions.Configuration": {
             "target": "Package",
-            "version": "[3.6.0, )"
+            "version": "[5.0.0, )"
           },
-          "Microsoft.Net.Compilers": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
+          "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "[3.9.0, )"
+            "version": "[5.0.1, )"
+          },
+          "NetEscapades.Configuration.Yaml": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           }
         },
         "imports": [
@@ -1838,17 +1882,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 3.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

@@ -88,7 +88,7 @@ namespace CreativeCircleBot
                     if (!(message.Author as SocketGuildUser).Roles.Any(r => r.Id == 839474198057320448))
                     {
                         await message.Channel.SendMessageAsync($"{message.Author.Mention}, you can't get more Invites!");
-                        return;
+                        break;
                     }
 
                     var invite1 = await (_client.GetChannel(839016058454278167) as ITextChannel).CreateInviteAsync(maxAge: null, maxUses: 1, isTemporary: false, isUnique: true, options: RequestOptions.Default);
