@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>Example</RootNamespace>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Modules\ExampleModule.cs.aus" />
+    <None Remove="Modules\HelpModule.cs.aus" />
+    <None Remove="Modules\MathModule.cs.aus" />
+    <None Remove="Modules\ModeratorModule.cs.aus" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Modules\ExampleModule.cs.aus" />
+    <Compile Include="Modules\HelpModule.cs.aus" />
+    <Compile Include="Modules\MathModule.cs.aus" />
+    <Compile Include="Modules\ModeratorModule.cs.aus" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="NetEscapades.Configuration.Yaml" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="_config.yml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
